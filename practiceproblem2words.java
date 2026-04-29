@@ -1,4 +1,4 @@
-public class practiceproblem2butforwords {
+public class practiceproblem2words {
    
     public static char[] reversText(String input) {
     
