@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 public class decisionnimaking {
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
 
         Scanner in = new Scanner(System.in);
 
         System.out.print("Enter your name: ");
-        String name = in.nextLine();
+        String name = in.nextLine(); //can include spaces and user must presses Enter.
 
-        System.out.println("Hello, " + name + "!");
+        System.out.println("Hello, " + name + "!"); // what ever is typed for name will be the name used
         System.out.println("You're a Bronx Science student.");
 
         System.out.println("You have a test tomorrow.");
@@ -20,7 +20,8 @@ public class decisionnimaking {
         System.out.println("5. Study till you feel tired and rest");
 
         System.out.print("Enter choice: ");
-        int choice1 = in.nextInt();
+        int choice1 = in.nextInt(); // only accepts integers
+
         in.nextLine();  
 
         if (choice1 == 2 || choice1 == 3) {
@@ -44,7 +45,7 @@ public class decisionnimaking {
         System.out.println("You look up and see an ugly, wrinkled old lady.");
         System.out.println("Do you run or freeze on the spot? (run/freeze)");
 
-        String choice2 = in.nextLine().trim().toLowerCase();
+        String choice2 = in.nextLine().trim().toLowerCase(); //reads the entire line of text user typed until they hit Enter, cuts off any accidental spaces at the beginning or end, and turns every letter into lowercase.
 
         if (choice2.equals("freeze")) {
             System.out.println("You get stepped on and die. Game over.");
@@ -64,7 +65,7 @@ public class decisionnimaking {
         System.out.println("2. Hide behind a leaf");
         System.out.println("3. Do nothing");
         System.out.print("Enter choice: ");
-        int choice3 = in.nextInt();
+        int choice3 = in.nextInt(); // only accepts integers
         in.nextLine();
 
         if (choice3 == 1) {
@@ -97,7 +98,7 @@ else {
         System.out.println("1. Yes");
         System.out.println("2. No");
         System.out.print("Enter choice: ");
-        int choice4 = in.nextInt();
+        int choice4 = in.nextInt(); // only accepts integers
         in.nextLine();
 
         if (choice4 == 1) {
