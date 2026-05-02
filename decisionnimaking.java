@@ -34,7 +34,7 @@ public class decisionnimaking {
             System.out.println("You rest peacefully and fall asleep.");
         } else {
             System.out.println("Invalid choice. Game over.");
-            return;
+            return; //die
         }
 
         // DREAM SEQUENCE
@@ -49,14 +49,14 @@ public class decisionnimaking {
 
         if (choice2.equals("freeze")) {
             System.out.println("You get stepped on and die. Game over.");
-            return;
+            return; //die
         } 
         else if (choice2.equals("run")) {
             System.out.println("You scurry away and fly out an open window!");
         } 
         else {
             System.out.println("Invalid choice. Game over.");
-            return;
+            return; //die
         }
 
         System.out.println("You reach a storm drain glowing with a strange blue light.");
@@ -84,13 +84,13 @@ else if (choice3 == 3) {
     System.out.println("You suddenly regret EVERYTHING.");
     System.out.println("SPLAT.");
     System.out.println("You have died. Game over.");
-    return;
+    return; //die
 }
 else {
     System.out.println("You hesitate. The world flickers like a broken TV.");
     System.out.println("The dream collapses. Everything turns white.");
     System.out.println("Game over.");
-    return;
+    return;  //die
 }
         System.out.println("\nA roach wearing a tiny candy-wrapper cape appears.");
         System.out.println("\"You are the chosen one. Only YOU can defeat the Old Lady Witch.\"");
@@ -108,7 +108,7 @@ else {
         } 
         else if (choice4 == 2) {
             System.out.println("The roach leaves sadly. Game over.");
-            return;
+            return; //die
         }
 
         // WAKING UP
