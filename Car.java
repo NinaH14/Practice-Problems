@@ -25,24 +25,25 @@ this.mileage = mile + mileage;
 
 public static void main(String[] args) {
    
-    Scanner in = new Scanner(System.in);
-System.out.println( " Enter car model:");
-  String model = in.nextLine();
-       
-System.out.println ("Enter car brand:");
-String brand = in.nextLine();
-
-
-int initialmilage = 100;
-int mile= 50;
-
-
-
-Car myCar = new Car(model, brand,  initialmilage);
-myCar.drive(50);
-int result = myCar.mileage;
-
-        System.out.println("car infomation:" + brand+ " " + model+ " " + result + "!");
+    try (Scanner in = new Scanner(System.in)) {
+        System.out.println( " Enter car model:");
+          String model = in.nextLine();
+               
+        System.out.println ("Enter car brand:");
+        String brand = in.nextLine();
+        
+        
+        int initialmilage = 100;
+        int mile= 50;
+        
+        
+        
+        Car myCar = new Car(model, brand,  initialmilage);
+        myCar.drive(50);
+        int result = myCar.mileage;
+        
+                System.out.println("car infomation:" + brand+ " " + model+ " " + result + "!");
+    }
         
 
 }

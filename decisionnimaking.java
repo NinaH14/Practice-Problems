@@ -34,6 +34,7 @@ public class decisionnimaking {
             System.out.println("You rest peacefully and fall asleep.");
         } else {
             System.out.println("Invalid choice. Game over.");
+            in.close();
             return; //die
         }
 
@@ -56,6 +57,7 @@ public class decisionnimaking {
         } 
         else {
             System.out.println("Invalid choice. Game over.");
+            in.close();
             return; //die
         }
 
@@ -84,12 +86,14 @@ else if (choice3 == 3) {
     System.out.println("You suddenly regret EVERYTHING.");
     System.out.println("SPLAT.");
     System.out.println("You have died. Game over.");
+    in.close();
     return; //die
 }
 else {
     System.out.println("You hesitate. The world flickers like a broken TV.");
     System.out.println("The dream collapses. Everything turns white.");
     System.out.println("Game over.");
+    in.close();
     return;  //die
 }
         System.out.println("\nA roach wearing a tiny candy-wrapper cape appears.");
@@ -108,6 +112,7 @@ else {
         } 
         else if (choice4 == 2) {
             System.out.println("The roach leaves sadly. Game over.");
+            in.close();
             return; //die
         }
 
