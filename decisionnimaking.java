@@ -50,6 +50,7 @@ public class decisionnimaking {
 
         if (choice2.equals("freeze")) {
             System.out.println("You get stepped on and die. Game over.");
+            in.close();
             return; //die
         } 
         else if (choice2.equals("run")) {
