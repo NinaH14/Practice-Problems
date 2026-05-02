@@ -6,17 +6,17 @@ public String brand;
 public int mileage;
 public Car (String model, String brand, int mileage ) {
 
-this.model = model;   
+this.model = model;   //constructors that take in the model, brand, and milage
 this.brand = brand;
 this.mileage = mileage;
 }
-    public void displayInfo() {
+    public void displayInfo() { //method that display the information of the car
 System.out.println(  model+ " "  + brand);
     }
 
-public void drive(int mile) {
+public void drive(int mile) { 
     if (mile > 0 ) {
-this.mileage = mile + mileage; 
+this.mileage = mile + mileage; // the mileage of the car will increase based on how many miles you drive
 }
 
  return;
@@ -34,8 +34,6 @@ public static void main(String[] args) {
         
         
         int initialmilage = 100;
-        int mile= 50;
-        
         
         
         Car myCar = new Car(model, brand,  initialmilage);
