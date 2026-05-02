@@ -2,12 +2,10 @@ public class practiceproblem4 {
 
 public static int fib(int n) {
 
-    int a = 0;
-    int b = 1;
-    if (n==1) return 1;
+    if (n==1) return 1; 
     if (n==0) return 0; {
 
-return fib(n-1)+ fib(n-2);
+return fib(n-1)+ fib(n-2); // the value of the current number is the sum of the two numbers before
 }
 }
 
