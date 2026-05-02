@@ -1,12 +1,12 @@
 public class practiceproblem2{
 
-public static int[] reverseArray(int arr[]) {
+public static int[] reverseArray(int arr[]) { 
     
     int m = 0;
-     int[] reversed = new int[arr.length];
+     int[] reversed = new int[arr.length];  // create a new array that can store the reversed order of the original array
 
-     for (m = 0; m <  arr.length; m++) { 
-    reversed[m] = arr[arr.length - 1 - m];
+     for (m = 0; m <  arr.length; m++) {  // go through original array start to finish, one by one
+    reversed[m] = arr[arr.length - 1 - m]; // putting the last number of the original array and putting it in the first spot of the new reverse array
 }
     return reversed;
     }
