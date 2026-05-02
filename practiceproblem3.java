@@ -5,10 +5,11 @@ public static int sumGrid(int[][] grid) {
 
     int total = 0;
 
-for (int i = 0; i< grid.length; i++) {
-    for ( int m = 0;  m < grid[i].length; m++ ){
-    total= grid[i][m]+ total;
+for (int i = 0; i< grid.length; i++) { // go through each row of the grid
+    for ( int m = 0;  m < grid[i].length; m++ ){ //inside that row, loop through every column or individual box
+    total= grid[i][m]+ total;  // add value of the box to total, and move to the next box
     }
+
 }
 return total;
 }
